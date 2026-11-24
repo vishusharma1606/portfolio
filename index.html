@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishvek Sharma — Site Reliability &amp; DevOps Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio of Vishvek Sharma, Site Reliability Engineer & DevOps Engineer based in Noida, India. Experienced in production support, Jenkins CI/CD, Linux, AWS, Docker, Kubernetes, Python, and Bash."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Vishvek Sharma Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="mono">vishvek<span class="accent">.sre</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#credentials" class="nav-link">Credentials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          id="themeToggle"
+          class="icon-btn"
+          type="button"
+          aria-label="Toggle color theme"
+          title="Toggle Light / Dark theme"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Hire Me</a>
+
+        <button
+          id="menuToggle"
+          class="icon-btn menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span class="mono">OPEN TO SRE / DEVOPS ROLES · NOIDA / NCR</span>
+          </div>
+
+          <h1 class="hero-title">
+            Vishvek Sharma
+            <span class="hero-role">Site Reliability &amp; DevOps Engineer</span>
+          </h1>
+
+          <p class="hero-summary">
+            SRE/DevOps Engineer with <strong>1+ year of experience</strong> in production support,
+            <strong>Jenkins CI/CD automation</strong>, and <strong>Linux</strong> environments. Working knowledge of
+            <strong>Docker, Kubernetes, AWS</strong>, and <strong>Python/Bash scripting</strong>. AWS Certified Cloud
+            Practitioner with strong skills in incident management, troubleshooting, and root cause analysis.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get in Touch</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#experience" class="btn btn-secondary">View Experience</a>
+            <button type="button" class="btn btn-ghost copy-trigger" data-copy="vishveksharma@gmail.com" data-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/vishusharma1606" target="_blank" rel="noopener noreferrer" class="social-chip">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
+              </svg>
+              <span>github.com/vishusharma1606</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vishvek-sharma-6989181a0" target="_blank" rel="noopener noreferrer" class="social-chip">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <span class="social-chip static-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Noida, India</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Interactive SRE Console Card -->
+        <aside class="terminal-card reveal" aria-label="Interactive engineer profile console">
+          <div class="terminal-header">
+            <div class="terminal-dots" aria-hidden="true">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title mono">vishvek@sre-workstation:~</div>
+            <div class="terminal-tabs" role="tablist" aria-label="Profile views">
+              <button type="button" class="term-tab active" role="tab" aria-selected="true" data-tab="overview">overview</button>
+              <button type="button" class="term-tab" role="tab" aria-selected="false" data-tab="sre">sre-ops</button>
+              <button type="button" class="term-tab" role="tab" aria-selected="false" data-tab="certs">certs</button>
+            </div>
+          </div>
+
+          <div class="terminal-body mono">
+            <div class="term-panel active" id="tab-overview" role="tabpanel">
+              <p class="cmd"><span class="prompt">$</span> cat profile.yaml</p>
+              <pre class="code-block"><span class="k">name</span>: <span class="s">"Vishvek Sharma"</span>
+<span class="k">role</span>: <span class="s">"Site Reliability Engineer | DevOps"</span>
+<span class="k">location</span>: <span class="s">"Noida, India"</span>
+<span class="k">target_market</span>: <span class="s">"Noida / NCR"</span>
+<span class="k">experience</span>: <span class="s">"1+ year (Aviz Networks)"</span>
+<span class="k">education</span>: <span class="s">"B.Tech CSE, AKTU (2017–2021)"</span>
+<span class="k">cloud_cert</span>: <span class="s">"AWS Cloud Practitioner (CLF-C02)"</span>
+<span class="k">status</span>: <span class="g">"READY_FOR_DEPLOYMENT"</span></pre>
+            </div>
+
+            <div class="term-panel" id="tab-sre" role="tabpanel" hidden>
+              <p class="cmd"><span class="prompt">$</span> ./check_capabilities.sh --sre</p>
+              <pre class="code-block"><span class="g">[OK]</span> Incident Management &amp; L1 Production Support
+<span class="g">[OK]</span> SLA Compliance &amp; Root Cause Analysis (RCA)
+<span class="g">[OK]</span> Jenkins CI/CD Pipeline Automation
+<span class="g">[OK]</span> Python &amp; Bash Log Analysis Scripting
+<span class="g">[OK]</span> Linux Administration &amp; Health Checks
+<span class="g">[OK]</span> Prometheus, Grafana &amp; Alerting Workflows
+<span class="g">[OK]</span> Docker, Kubernetes &amp; AWS (EC2, IAM, S3)</pre>
+            </div>
+
+            <div class="term-panel" id="tab-certs" role="tabpanel" hidden>
+              <p class="cmd"><span class="prompt">$</span> aws sts get-verified-badges</p>
+              <pre class="code-block"><span class="k">[1]</span> AWS Certified Cloud Practitioner (CLF-C02)
+    <span class="muted">Issuer:</span> Amazon Web Services
+    <span class="muted">Issued:</span> July 2026
+    <span class="muted">Verify:</span> credly.com/badges/2c8de712...
+
+<span class="k">[2]</span> Programming with Python
+    <span class="muted">Issuer:</span> Internshala
+    <span class="muted">Issued:</span> November 2020</pre>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Key Highlights Strip -->
+      <div class="container highlights-strip reveal">
+        <div class="highlight-item">
+          <span class="highlight-value mono">1+ Yr</span>
+          <span class="highlight-label">SRE &amp; Production Support at Aviz Networks</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value mono">CLF-C02</span>
+          <span class="highlight-label">AWS Certified Cloud Practitioner (July 2026)</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value mono">CI/CD</span>
+          <span class="highlight-label">Jenkins Build, Test &amp; Deploy Automation</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value mono">L1 &amp; RCA</span>
+          <span class="highlight-label">SLA-Compliant Incident Resolution &amp; Runbooks</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">01 // TECHNICAL STACK</span>
+          <h2>Tools, Platforms &amp; SRE Practices</h2>
+          <p>Core technologies and operational practices applied across cloud infrastructure, CI/CD pipelines, monitoring, and automation.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter technical skills">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="cloud">Cloud &amp; OS</button>
+          <button type="button" class="filter-btn" data-filter="cicd">Containers &amp; CI/CD</button>
+          <button type="button" class="filter-btn" data-filter="sre">Monitoring &amp; SRE</button>
+          <button type="button" class="filter-btn" data-filter="code">Scripting &amp; Testing</button>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-category="cloud">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">AWS</span>
+              <h3>Cloud</h3>
+            </div>
+            <p class="skill-desc">Foundational cloud architecture, compute instances, identity policies, and object storage.</p>
+            <div class="tags">
+              <span class="tag">AWS EC2</span>
+              <span class="tag">AWS IAM</span>
+              <span class="tag">AWS S3</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="cicd">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">OPS</span>
+              <h3>Containers &amp; CI/CD</h3>
+            </div>
+            <p class="skill-desc">Automating build, test, and release workflows alongside containerized workloads.</p>
+            <div class="tags">
+              <span class="tag">Jenkins</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="cloud">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">SYS</span>
+              <h3>Operating Systems</h3>
+            </div>
+            <p class="skill-desc">Server administration, environment troubleshooting, process inspection, and system health checks.</p>
+            <div class="tags">
+              <span class="tag">Linux</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="code">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">&gt;_</span>
+              <h3>Scripting</h3>
+            </div>
+            <p class="skill-desc">Automating log analysis, routine operational tasks, and troubleshooting utilities.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Shell</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="sre">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">MON</span>
+              <h3>Monitoring</h3>
+            </div>
+            <p class="skill-desc">Tracking system health, metrics dashboards, and log-based anomaly investigation.</p>
+            <div class="tags">
+              <span class="tag">Prometheus</span>
+              <span class="tag">Grafana</span>
+              <span class="tag">Log Analysis</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="sre">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">SLA</span>
+              <h3>SRE Practices</h3>
+            </div>
+            <p class="skill-desc">Maintaining reliability targets through structured incident response and post-incident learning.</p>
+            <div class="tags">
+              <span class="tag">Incident Management</span>
+              <span class="tag">RCA</span>
+              <span class="tag">Production Support</span>
+              <span class="tag">SLI / SLO / SLA</span>
+              <span class="tag">Error Budgets</span>
+              <span class="tag">Alerting</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="code">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">GIT</span>
+              <h3>Version Control</h3>
+            </div>
+            <p class="skill-desc">Collaborative source control, pipeline integration, and release tracking.</p>
+            <div class="tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-category="code">
+            <div class="skill-card-head">
+              <span class="skill-icon mono">QA</span>
+              <h3>Testing &amp; Automation</h3>
+            </div>
+            <p class="skill-desc">Automated GUI validation and regression checks integrated into release workflows.</p>
+            <div class="tags">
+              <span class="tag">Selenium (GUI Automation)</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">02 // CAREER TIMELINE</span>
+          <h2>Experience</h2>
+          <p>Hands-on production operations, CI/CD engineering, and continuous cloud upskilling.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Site Reliability Engineer</h3>
+                  <p class="company">Aviz Networks · Hyderabad</p>
+                </div>
+                <span class="period mono">May 2023 – Oct 2023</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Resolved Level-1 production incidents while maintaining SLA compliance.</li>
+                <li>Built and maintained Jenkins CI/CD pipelines for application deployment.</li>
+                <li>Automated log analysis using Python and Bash, reducing manual troubleshooting effort.</li>
+                <li>Investigated application and infrastructure issues across Linux environments with developers to improve stability.</li>
+                <li>Performed GUI testing and Selenium automation for the ONES platform.</li>
+                <li>Assisted in system monitoring and health checks using monitoring tools.</li>
+                <li>Documented runbooks, troubleshooting guides, and incident resolutions.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Site Reliability Engineer Intern</h3>
+                  <p class="company">Aviz Networks · Hyderabad</p>
+                </div>
+                <span class="period mono">Aug 2022 – May 2023</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Supported production systems through incident handling and monitoring.</li>
+                <li>Assisted in root cause analysis for recurring production issues.</li>
+                <li>Developed Selenium automation scripts for GUI testing.</li>
+                <li>Automated routine tasks using Shell scripting.</li>
+                <li>Supported Linux server administration and troubleshooting.</li>
+                <li>Maintained operational documentation, runbooks, and incident reports.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker marker-muted" aria-hidden="true"></div>
+            <div class="timeline-card card-break">
+              <div class="timeline-head">
+                <div>
+                  <h3>Career Break — Government Exam Preparation</h3>
+                  <p class="company">Full-Time Preparation &amp; AWS Certification</p>
+                </div>
+                <span class="period mono">Nov 2023 – Oct 2026</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Full-time preparation for government exams. Earned <strong>AWS Certified Cloud Practitioner (July 2026)</strong> and now returning to DevOps/SRE.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">03 // FEATURED PROJECT</span>
+          <h2>Production &amp; Automation Work</h2>
+          <p>Delivering reliable releases and SLA-backed operational support for enterprise networking software.</p>
+        </div>
+
+        <article class="project-showcase reveal">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-badge mono">PRODUCTION PLATFORM</span>
+              <span class="period mono">Aug 2022 – Oct 2023</span>
+            </div>
+            <h3>ONES (Open Networks Enterprise Suite)</h3>
+            <p class="project-lead">
+              End-to-end CI/CD release automation and L1 production reliability support for the ONES platform at Aviz Networks.
+            </p>
+            <ul class="bullet-list">
+              <li>
+                Developed a <strong>Jenkins CI/CD pipeline</strong> to automate build, test and deployment of the ONES
+                platform, reducing manual release effort and deployment errors.
+              </li>
+              <li>
+                Provided <strong>L1 production support</strong> for ONES, resolving incidents within SLA and working with
+                developers on root cause analysis to improve application stability.
+              </li>
+            </ul>
+            <div class="tags project-tags">
+              <span class="tag">Jenkins CI/CD</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Python &amp; Bash</span>
+              <span class="tag">Selenium GUI Testing</span>
+              <span class="tag">L1 Support &amp; RCA</span>
+              <span class="tag">SLA Compliance</span>
+            </div>
+          </div>
+
+          <div class="pipeline-diagram" aria-label="ONES CI/CD and Reliability Workflow">
+            <div class="pipeline-title mono">ONES_DELIVERY_AND_RELIABILITY_LOOP</div>
+            <div class="pipeline-steps">
+              <div class="pipe-node">
+                <span class="pipe-step mono">01</span>
+                <div>
+                  <strong>Build</strong>
+                  <span>Source pull &amp; package via Jenkins</span>
+                </div>
+              </div>
+              <div class="pipe-arrow" aria-hidden="true">↓</div>
+              <div class="pipe-node">
+                <span class="pipe-step mono">02</span>
+                <div>
+                  <strong>Test</strong>
+                  <span>Automated Selenium GUI checks</span>
+                </div>
+              </div>
+              <div class="pipe-arrow" aria-hidden="true">↓</div>
+              <div class="pipe-node">
+                <span class="pipe-step mono">03</span>
+                <div>
+                  <strong>Deploy</strong>
+                  <span>Automated Linux environment rollout</span>
+                </div>
+              </div>
+              <div class="pipe-arrow" aria-hidden="true">↓</div>
+              <div class="pipe-node pipe-node-accent">
+                <span class="pipe-step mono">04</span>
+                <div>
+                  <strong>Monitor &amp; RCA</strong>
+                  <span>Health checks, Python/Bash logs, L1 SLA fix</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section section-alt" id="credentials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">04 // CREDENTIALS</span>
+          <h2>Education &amp; Certifications</h2>
+          <p>Academic foundation in Computer Science paired with verified cloud and programming credentials.</p>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="cred-card reveal">
+            <div class="cred-type mono">CERTIFICATION · VERIFIED</div>
+            <h3>AWS Certified Cloud Practitioner (CLF-C02)</h3>
+            <p class="cred-issuer">Amazon Web Services · July 2026</p>
+            <p class="cred-note">Validates foundational understanding of AWS Cloud concepts, core services (EC2, IAM, S3), security, and cloud architecture.</p>
+            <a
+              href="https://www.credly.com/badges/2c8de712-576b-4332-9e2b-a0eba31e5a34/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-sm btn-secondary cred-link"
+            >
+              <span>Verify on Credly</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </article>
+
+          <article class="cred-card reveal">
+            <div class="cred-type mono">CERTIFICATION</div>
+            <h3>Programming with Python</h3>
+            <p class="cred-issuer">Internshala · November 2020</p>
+            <p class="cred-note">Core Python programming foundation supporting log parsing scripts and operational automation.</p>
+          </article>
+
+          <article class="cred-card reveal">
+            <div class="cred-type mono">EDUCATION</div>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="cred-issuer">Dr. A.P.J. Abdul Kalam Technical University · 2017 – 2021</p>
+            <p class="cred-note">Undergraduate engineering degree in computer science, systems, and software fundamentals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag mono">05 // CONNECT</span>
+            <h2>Let’s Build Reliable Systems Together</h2>
+            <p>
+              Currently seeking <strong>Site Reliability Engineer (SRE)</strong> and <strong>DevOps Engineer</strong>
+              opportunities in <strong>Noida / NCR</strong>. Feel free to reach out directly via email, phone, or LinkedIn.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label mono">EMAIL</span>
+                  <a href="mailto:vishveksharma@gmail.com" class="contact-value">vishveksharma@gmail.com</a>
+                </div>
+                <button type="button" class="btn btn-sm btn-ghost copy-trigger" data-copy="vishveksharma@gmail.com" data-label="Email">Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label mono">PHONE</span>
+                  <a href="tel:+918279968867" class="contact-value">+91-8279968867</a>
+                </div>
+                <button type="button" class="btn btn-sm btn-ghost copy-trigger" data-copy="+91-8279968867" data-label="Phone">Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label mono">LOCATION</span>
+                  <span class="contact-value">Noida, India (Open to Noida / NCR)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/vishvek-sharma-6989181a0" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                LinkedIn Profile
+              </a>
+              <a href="https://github.com/vishusharma1606" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                GitHub Profile
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <h3>Send a Quick Message</h3>
+            <p class="form-hint">Opens a pre-filled draft in your email client addressed to vishveksharma@gmail.com.</p>
+
+            <div class="field">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" placeholder="Hiring Manager / Recruiter" required />
+            </div>
+
+            <div class="field">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="you@company.com" required />
+            </div>
+
+            <div class="field">
+              <label for="messageBody">Message</label>
+              <textarea id="messageBody" name="message" rows="4" placeholder="Hi Vishvek, we'd love to discuss an SRE / DevOps opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">Open Email Draft</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© <span id="year"></span> Vishvek Sharma · Site Reliability &amp; DevOps Engineer</p>
+      <a href="#hero" class="back-top mono">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast mono" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
